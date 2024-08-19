@@ -1,0 +1,103 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-135deg, #f48e09 0%, #1d1000 100%);
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #f48e09;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-item {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.input-item label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+input[type="number"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #f48e09;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: #5151e5;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5151e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+#ageResult {
+  font-size: 2rem;
+  color: #5151e5;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-item {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #ageResult {
+    font-size: 1.5rem;
+  }
+}
